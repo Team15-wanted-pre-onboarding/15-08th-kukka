@@ -4,6 +4,9 @@
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 auto;
+  a {
+    cursor: pointer;
+  }
   .image-header {
     display: flex;
     justify-content: space-between;
