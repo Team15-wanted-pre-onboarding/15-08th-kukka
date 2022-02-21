@@ -1,7 +1,6 @@
 import '@babel/polyfill';
-import $ from 'jquery';
-import 'normalize.css';
-import './index.module.scss';
+import 'normalize-scss';
+import './index.scss';
 import Nav from './components/nav/Nav';
 import VideoView from './components/VideoView/VideoView';
 import ImageView from './components/imageView/ImageView';

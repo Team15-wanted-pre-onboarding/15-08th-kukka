@@ -14,30 +14,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s?css$/i,
-                oneOf: [
-                    {
-                        test: /\.module\.s?css$/, 
-                        use: [
-                            {
-                                loader: MiniCssExtractPlugin.loader
-                            },
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    modules: true
-                                }
-                            },
-                            'sass-loader'
-                        ]   
-                    }, {
-                        use: [ 
-                            MiniCssExtractPlugin.loader,
-                            'css-loader',
-                            'sass-loader'
-                        ]
-                    }
-                ]
+                test: /\.scss$/,
+                use: [
+                  "style-loader", 
+                  "css-loader", 
+                  "sass-loader" 
+                ]  
             }, {
                 test: /\.hbs$/,
                 use: ['handlebars-loader']
