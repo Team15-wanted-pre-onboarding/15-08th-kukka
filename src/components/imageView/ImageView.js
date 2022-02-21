@@ -44,7 +44,8 @@ const thirdMoney = thirdHeader.querySelector("p:nth-child(2)");
 const leftBtn = imageView.querySelector("#left-btn");
 const rigtBtn = imageView.querySelector("#right-btn");
 
-console.log(secondHeader, secondTitle); // dom confirm
+console.log(secondTitle, thirdTitle); // dom confirm
+
 const ImageView = () => {
   let imageInfoIndex = 0;
 
@@ -68,8 +69,18 @@ const ImageView = () => {
     thirdMoney.innerHTML = `${imageInfo[indexControl(index + 2)].money}원`;
   };
 
+  const addInnerTitle = (index) => {
+    secondTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}${
+      imageInfo[indexControl(index + 1)].day
+    }`;
+    thirdTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}${
+      imageInfo[indexControl(index + 1)].day
+    }`;
+  };
+
   addImageSrc(imageInfoIndex);
   addInnerMoney(imageInfoIndex);
+  addInnerTitle(imageInfoIndex);
 
   const handleClickRightMove = (e) => {
     if (imageInfoIndex === imageInfo.length - 1) {
@@ -82,6 +93,7 @@ const ImageView = () => {
     secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
     thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
     addInnerMoney(imageInfoIndex);
+    addInnerTitle(imageInfoIndex);
   };
 
   const handleClickLeftMove = (e) => {
@@ -95,6 +107,7 @@ const ImageView = () => {
     secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
     thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
     addInnerMoney(imageInfoIndex);
+    addInnerTitle(imageInfoIndex);
   };
 
   leftBtn.addEventListener("click", handleClickLeftMove);
