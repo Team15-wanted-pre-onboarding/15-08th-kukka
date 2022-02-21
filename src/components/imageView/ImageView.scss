@@ -1,5 +1,25 @@
 .image-view {
-  .test {
-    color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 auto;
+  .image-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-section {
+    display: flex;
+  }
+
+  .big-image-box {
+    width: 50%;
+    padding-right: 2%;
+  }
+
+  .smll-image-box {
+    display: flex;
+    flex-direction: column;
   }
 }
