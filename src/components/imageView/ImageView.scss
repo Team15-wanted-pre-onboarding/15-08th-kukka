@@ -1,9 +1,13 @@
 .image-view {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 auto;
+  @media (min-width: 1024px) {
+    & {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+  }
   a {
     cursor: pointer;
   }
