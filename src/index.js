@@ -1,18 +1,19 @@
-import 'normalize.css';
-import styles from './index.module.scss';
-import $ from 'jquery';
 import '@babel/polyfill';
+import $ from 'jquery';
+import 'normalize.css';
+import './index.module.scss';
+import Nav from './components/nav/Nav';
+import VideoView from './components/VideoView/VideoView';
+import ImageView from './components/imageView/ImageView';
+import BannerView from './components/bannerView/BannerView';
+import Footer from './components/footer/Footer';
 
-function index() {
-    const element = document.createElement('div');
-    element.innerHTML = 'Hello 은총님!';
+const app = (function() {
+    Nav();
+    VideoView();
+    ImageView();
+    BannerView();
+    Footer();
+})();
 
-    element.classList = styles.helloWebpack;
-
-    return element;
-}
-
-document.body.appendChild(index());
-
-console.log($(`.${styles.helloWebpack}`).length);
 console.log(`IS_PRODUCTION: ${IS_PRODUCTION}`);
