@@ -50,6 +50,10 @@ const ImageView = () => {
     return index;
   };
 
+  firstImage.src = imageInfo[imageInfoIndex].image;
+  secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
+  thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
+
   const handleClickRightMove = (e) => {
     if (imageInfoIndex === imageInfo.length - 1) {
       imageInfoIndex = 0;
