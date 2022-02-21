@@ -50,6 +50,12 @@ const ImageView = () => {
     return index;
   };
 
+  const addImageSrc = (index) => {
+    firstImage.src = imageInfo[index].image;
+    secondImage.src = imageInfo[indexControl(index + 1)].image;
+    thiirdImage.src = imageInfo[indexControl(index + 2)].image;
+  };
+
   firstImage.src = imageInfo[imageInfoIndex].image;
   secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
   thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
