@@ -3,11 +3,14 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.config.common');
 
+const cleanCSS = require('clean-css');
+
+
 const config = {
     plugins: [
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
-            cssProcessor: require('cssnano'),
+            cssProcessor: cleanCSS,
             cssProcessorPluginOptions: {
                 preset: ['default', {discardComments: {removeAll: true}}]
             },

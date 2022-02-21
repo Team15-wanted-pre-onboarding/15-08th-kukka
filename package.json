@@ -4,9 +4,9 @@
   "description": "15-8th-kukka_project",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=DEVELOPMENT webpack --config ./webpack-config/webpack.config.dev.js",
-    "build": "NODE_ENV=PRODUCTION webpack --config ./webpack-config/webpack.config.prod.js",
-    "start": "NODE_ENV=DEVELOPMENT webpack-dev-server --open --config ./webpack-config/webpack.config.dev.js"
+    "dev": "cross-env NODE_ENV=DEVELOPMENT webpack --config ./webpack-config/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=PRODUCTION webpack --config ./webpack-config/webpack.config.prod.js",
+    "start": "cross-env NODE_ENV=DEVELOPMENT webpack-dev-server --open --config ./webpack-config/webpack.config.dev.js"
   },
   "author": "Team15",
   "license": "ISC",
@@ -17,7 +17,9 @@
     "@babel/preset-env": "^7.15.0",
     "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
+    "clean-css": "^5.2.4",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^3.0.0",
     "cssnano": "^5.0.7",
     "file-loader": "^6.2.0",
