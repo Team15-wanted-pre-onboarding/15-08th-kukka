@@ -29,14 +29,14 @@ const imageInfo = [
 
 const imageView = document.querySelector(".image-view");
 
-//const firstImageBox = imageView.querySelector(".first-image-box");
+//const firstImageBox = document.querySelector(".first-image-box");
 const firstImage = imageView.querySelector("#first-image");
 
 //const secondImageBox = imageView.querySelector(".second-image-box");
 const secondImage = imageView.querySelector("#second-image");
 
 //const thirdImageBox = imageView.querySelector(".third-image-box");
-const thiirddImage = imageView.querySelector("#third-image");
+const thiirdImage = imageView.querySelector("#third-image");
 
 const leftBtn = imageView.querySelector("#left-btn");
 const rigtBtn = imageView.querySelector("#right-btn");
@@ -45,14 +45,13 @@ const ImageView = () => {
   console.log("this is ImageView");
   let imageInfoIndex = 0;
 
-  const handleClickLeftMove = (e) => {
-    if (imageInfoIndex === 0) {
-      imageInfoIndex = imageInfo.length - 1;
-    } else {
-      imageInfoIndex -= 1;
+  const indexControl = (index) => {
+    if (index === imageInfo.length) {
+      index = 0;
+    } else if (index === imageInfo.length + 1) {
+      index = 1;
     }
-    console.log(imageInfoIndex);
-    firstImage.src = imageInfo[imageInfoIndex].image;
+    return index;
   };
 
   const handleClickRightMove = (e) => {
@@ -61,8 +60,22 @@ const ImageView = () => {
     } else {
       imageInfoIndex += 1;
     }
-    console.log(imageInfoIndex);
+
     firstImage.src = imageInfo[imageInfoIndex].image;
+    secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
+    thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
+  };
+
+  const handleClickLeftMove = (e) => {
+    if (imageInfoIndex === 0) {
+      imageInfoIndex = imageInfo.length - 1;
+    } else {
+      imageInfoIndex -= 1;
+    }
+
+    firstImage.src = imageInfo[imageInfoIndex].image;
+    secondImage.src = imageInfo[indexControl(imageInfoIndex + 1)].image;
+    thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
   };
 
   firstImage.addEventListener("click", () => {
