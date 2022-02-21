@@ -29,20 +29,16 @@ const imageInfo = [
 
 const imageView = document.querySelector(".image-view");
 
-//const firstImageBox = document.querySelector(".first-image-box");
 const firstImage = imageView.querySelector("#first-image");
 
-//const secondImageBox = imageView.querySelector(".second-image-box");
 const secondImage = imageView.querySelector("#second-image");
 
-//const thirdImageBox = imageView.querySelector(".third-image-box");
 const thiirdImage = imageView.querySelector("#third-image");
 
 const leftBtn = imageView.querySelector("#left-btn");
 const rigtBtn = imageView.querySelector("#right-btn");
 
 const ImageView = () => {
-  console.log("this is ImageView");
   let imageInfoIndex = 0;
 
   const indexControl = (index) => {
@@ -78,9 +74,6 @@ const ImageView = () => {
     thiirdImage.src = imageInfo[indexControl(imageInfoIndex + 2)].image;
   };
 
-  firstImage.addEventListener("click", () => {
-    console.log("aa");
-  });
   leftBtn.addEventListener("click", handleClickLeftMove);
   rigtBtn.addEventListener("click", handleClickRightMove);
 };
