@@ -27,10 +27,12 @@
           }
 
           .info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+
             .banner-name {
-              position: absolute;
-              top: 0;
-              left: 0;
             }
 
             .desc {
