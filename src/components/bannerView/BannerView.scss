@@ -58,8 +58,24 @@
         width: 50%;
         cursor: pointer;
 
+        &:first-child {
+          display: none;
+        }
+
+        &:last-child {
+          display: none;
+        }
+
         @media (max-width: 991px) {
           width: 100%;
+
+          &:first-child {
+            display: block;
+          }
+
+          &:last-child {
+            display: block;
+          }
         }
 
         .link {
