@@ -12,11 +12,11 @@
 
       .banner {
         width: 50%;
+        cursor: pointer;
 
         .link {
           position: relative;
           display: block;
-          overflow: hidden;
           color: #222222;
 
           .banner-image {
@@ -28,16 +28,38 @@
 
           .info {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 17%;
+            left: 38%;
             text-align: center;
+            color: #222;
+
+            &.show_room {
+              left: 30%;
+            }
 
             .banner-name {
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 31px;
+              letter-spacing: -0.33px;
             }
 
             .desc {
-              .more {
-              }
+              font-size: 12px;
+              line-height: 20px;
+              letter-spacing: -0.21px;
+            }
+
+            .more {
+              width: 138px;
+              height: 36px;
+              margin: 10px auto 0;
+              padding: 0 20px;
+              border: 1px solid #222;
+              border-radius: 18px;
+              font-size: 12px;
+              line-height: 34px;
+              letter-spacing: -0.21px;
             }
           }
         }
