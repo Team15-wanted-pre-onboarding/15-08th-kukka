@@ -18,8 +18,6 @@ const thirdMoney = thirdHeader.querySelector(".discount");
 const leftBtn = imageView.querySelector("#left-btn");
 const rigtBtn = imageView.querySelector("#right-btn");
 
-console.log(secondTitle, thirdTitle); // dom confirm
-
 const ImageView = () => {
   let imageInfoIndex = 0;
 
@@ -47,8 +45,8 @@ const ImageView = () => {
     secondTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}(${
       imageInfo[indexControl(index + 1)].day
     })`;
-    thirdTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}(${
-      imageInfo[indexControl(index + 1)].day
+    thirdTitle.innerHTML = `${imageInfo[indexControl(index + 2)].title}(${
+      imageInfo[indexControl(index + 2)].day
     })`;
   };
 
