@@ -9,6 +9,8 @@
 
     .show-view {
       display: flex;
+      display: -ms-flexbox;
+      display: -webkit-box;
 
       .banner {
         width: 50%;
@@ -18,12 +20,27 @@
           position: relative;
           display: block;
           color: #222222;
+          overflow: hidden;
 
           .banner-image {
             width: 100%;
             height: 180px;
             background-position: center center;
             background-size: cover;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transition: transform 0.2s ease-out 0s;
+
+            &:hover {
+              transform: scale(1.2);
+              -webkit-transform: scale(1.1);
+              -moz-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              -o-transform: scale(1.1);
+            }
           }
 
           .info {
