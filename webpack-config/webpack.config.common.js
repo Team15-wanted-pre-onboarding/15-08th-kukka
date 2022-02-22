@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.scss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
@@ -33,8 +33,6 @@ module.exports = {
                 }
                 return "[contenthash].[ext]";
               },
-              publicPath: "img/",
-              outpath: "img/",
             },
           },
         ],
@@ -90,6 +88,6 @@ module.exports = {
     new webpack.DefinePlugin({
       IS_PRODUCTION: isProduction,
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({ filename: 'style.css'}),
   ],
 };
