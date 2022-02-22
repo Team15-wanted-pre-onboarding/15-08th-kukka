@@ -1,12 +1,14 @@
 .pop-view {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   display: none;
   .pop-container {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 220vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
     .pop-inner {
