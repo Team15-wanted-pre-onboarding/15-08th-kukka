@@ -175,6 +175,10 @@
         height: 8px;
         border-radius: 50%;
         background-color: #e4e4e4;
+
+        &.active {
+          background-color: #f5ca5f;
+        }
       }
     }
   }
