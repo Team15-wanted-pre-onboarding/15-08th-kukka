@@ -18,7 +18,10 @@
 
 ## 3. 👋🏻 팀원 소개
 
-[제목 없음](https://www.notion.so/bdfe7c2b0f4245198bf5a7c6a8834551)
+|조은총|최병현|조용우|
+|----|---|---|
+|<img width="200px" src='https://avatars.githubusercontent.com/u/66837741?v=4'/>|<img width="200px" src="https://avatars.githubusercontent.com/u/65222200?v=4"/>|<img width="200px" src='https://avatars.githubusercontent.com/u/89348550?v=4'>|
+
 
 ---
 
