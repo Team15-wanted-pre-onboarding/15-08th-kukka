@@ -103,6 +103,22 @@
             -moz-user-drag: none;
             -ms-user-drag: none;
 
+            &.brand {
+              background-image: url("https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225_w.png");
+
+              @media (max-width: 991px) {
+                background-image: url("https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png");
+              }
+            }
+
+            &.show_room {
+              background-image: url("https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/offline_201225_w.png");
+
+              @media (max-width: 991px) {
+                background-image: url("https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/offline_201225.png");
+              }
+            }
+
             &:hover {
               transform: scale(1.2);
               -webkit-transform: scale(1.1);
@@ -147,6 +163,12 @@
               @media (min-width: 992px) and (max-width: 1100px) {
                 left: 25%;
               }
+
+              @media (max-width: 991px) {
+                top: 26%;
+                left: 2%;
+                text-align: left;
+              }
             }
 
             .banner-name {
@@ -157,7 +179,7 @@
 
               @media (max-width: 991px) {
                 font-size: 15px;
-                font-weight: 500;
+                font-weight: 700;
                 line-height: 20px;
                 letter-spacing: -0.21px;
               }
@@ -171,7 +193,6 @@
               @media (max-width: 991px) {
                 margin-top: 40px;
                 font-size: 12px;
-                font-weight: 300;
                 line-height: 20px;
                 letter-spacing: -0.18px;
               }
