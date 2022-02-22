@@ -7,13 +7,13 @@ const firstImage = imageView.querySelector("#first-image");
 
 const secondImage = imageView.querySelector("#second-image");
 const secondHeader = document.getElementById("second-header-info");
-const secondTitle = secondHeader.querySelector("p:nth-child(1)");
-const secondMoney = secondHeader.querySelector("p:nth-child(2)");
+const secondTitle = secondHeader.querySelector(".image-title");
+const secondMoney = secondHeader.querySelector(".discount");
 
 const thiirdImage = imageView.querySelector("#third-image");
 const thirdHeader = document.getElementById("third-header-info");
-const thirdTitle = thirdHeader.querySelector("p:nth-child(1)");
-const thirdMoney = thirdHeader.querySelector("p:nth-child(2)");
+const thirdTitle = thirdHeader.querySelector(".image-title");
+const thirdMoney = thirdHeader.querySelector(".discount");
 
 const leftBtn = imageView.querySelector("#left-btn");
 const rigtBtn = imageView.querySelector("#right-btn");
