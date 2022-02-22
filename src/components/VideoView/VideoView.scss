@@ -1,7 +1,22 @@
 .video-view {
+  max-width: 900px;
+  margin: 70px auto;
+  .summary {
+    max-width: 900px;
+    margin-bottom: 20px;
+    text-align: center;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 2;
+    }
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+      color: #696969;
+    }
+  }
   .video {
-    max-width: 798px;
-    margin: 70px auto;
     .video-ratio {
       position: relative;
       padding-top: 40%;
