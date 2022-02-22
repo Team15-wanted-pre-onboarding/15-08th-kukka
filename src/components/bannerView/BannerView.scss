@@ -10,16 +10,29 @@
   }
 
   .banner-header {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
+    display: none;
+    width: 100%;
+    // display: -ms-flexbox;
+    // display: -webkit-box;
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 991px) {
+      display: flex;
+    }
+
     .title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 100px;
+      letter-spacing: -0.33px;
     }
 
     .more {
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.18px;
+      cursor: pointer;
     }
   }
 
