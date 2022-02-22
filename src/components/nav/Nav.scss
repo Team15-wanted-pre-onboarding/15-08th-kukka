@@ -5,4 +5,42 @@
   height: 57px;
   background-color: aqua;
   text-align: center;
+  z-index: 99;
+  .item {
+    @media (min-width: 1024px) {
+      & {
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    a {
+      outline-width: 1px;
+      @media (min-width: 1024px) {
+        & {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 300;
+          letter-spacing: -0.27px;
+          color: #222;
+          width: auto !important;
+          background: 0 0;
+          display: block;
+          padding: 0;
+          text-decoration: none;
+        }
+      }
+    }
+    span {
+      @media (min-width: 1024px) {
+        & {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 300;
+          letter-spacing: -0.27px;
+          color: #222;
+        }
+      }
+    }
+  }
 }

@@ -240,6 +240,7 @@
     button {
       display: none;
       background: 0 0;
+      cursor: pointer;
       @media (min-width: 1024px) {
         & {
           display: block;
