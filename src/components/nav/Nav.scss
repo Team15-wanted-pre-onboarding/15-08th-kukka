@@ -1,7 +1,74 @@
-.nav {
+.has_shadow {
+  &::after {
+    display: block;
+    background: #ffca43 !important;
+  }
+}
+
+.nav-view {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 57px;
-  background-color: aqua;
+  background: #fff;
   text-align: center;
+  z-index: 99;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #f4f4f4;
+  }
+  .item {
+    @media (min-width: 1024px) {
+      & {
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    a {
+      outline-width: 1px;
+      &:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #ffcd32;
+        margin-top: 6px;
+      }
+      @media (min-width: 1024px) {
+        & {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 300;
+          letter-spacing: -0.27px;
+          color: #222;
+          width: auto !important;
+          background: 0 0;
+          display: block;
+          padding: 0;
+          text-decoration: none;
+        }
+      }
+    }
+    span {
+      cursor: pointer;
+      @media (min-width: 1024px) {
+        & {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 300;
+          letter-spacing: -0.27px;
+          color: #222;
+        }
+      }
+    }
+  }
 }

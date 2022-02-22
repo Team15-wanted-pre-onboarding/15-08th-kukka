@@ -41,60 +41,248 @@
             </div>
           </div>
         </div></section>
-      <header class="section nav-view">
-        <nav class="nav">Nav</nav>
+      <header class="nav-view">
+        <nav class="nav"></nav>
+        <nav class="header_pc">
+          <div class="navbar">
+            {{! <ul class="navbar-user new_type2">
+
+              <li class="item">
+                <a href="/account/login/?next=/" class="d1">
+                  <span>로그인</span>
+                </a>
+              </li>
+              <li class="item"><a
+                  href="#"
+                  class="d1"
+                  onclick="openModal('join_us_select', true);"
+                ><span>회원가입</span><span class="po">
+                    (1000포인트 지급!)</span></a></li>
+
+              <li class="item"><a href="/faq/" class="d1"><span>꾸까 고객센터</span></a></li>
+              <li class="item">
+                <a
+                  href="https://partners.kukka.kr/?utm_source=kukka&amp;utm_medium=affiliate&amp;utm_campaign=kukka&amp;utm_content=partners"
+                  class="d1"
+                  target="_blank"
+                  onclick="trackOutboundLink('https://partners.kukka.kr/?utm_source=kukka&amp;utm_medium=affiliate&amp;utm_campaign=kukka&amp;utm_content=partners'); return false;"
+                >
+                  <strong>기업제휴</strong>
+                </a>
+              </li>
+            </ul> }}
+            <ul class="navbar-list new_type new_type2">
+
+              <li class="item">
+                <a href="/subscription/" class="d1"><span>꽃 정기구독</span></a>
+                <span class="arr"></span>
+              </li>
+              <li class="item">
+                <a href="/shop/flowers/" class="d1"><span>꽃다발</span></a>
+                <span class="arr"></span>
+              </li>
+              <li class="item">
+                <a href="/shop/quick/" class="d1"><span>당일배송</span></a>
+                <span class="arr"></span>
+              </li>
+              <li class="item">
+                <a href="/class/" class="d1"><span>플라워클래스</span></a>
+                <span class="arr"></span>
+              </li>
+              <li class="item">
+                <a href="/item/all/" class="d1"><span>소품샵</span></a>
+                <span class="arr"></span>
+              </li>
+              <li class="item">
+                <a href="/event/" class="d1"><span>이벤트</span></a>
+                <span class="arr"></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
-      <section class="section video-view">video view</section>
+
+      <section class="section video-view">
+        <div class="summary">
+          <h2 class="title">
+            어서오세요, 꽃의 매력에 빠진 당신
+          </h2>
+          <p class="description">
+            취향에 맞는 꽃을 한 눈에 쉽게 살펴보고 소중한 이들에게 선물하세요
+          </p>
+        </div>
+        <div class="video">
+          <div class="video-ratio">
+            <iframe
+              width="900"
+              height="315"
+              src="https://www.youtube.com/embed/5QXeJwQ0Sy4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <section class="section image-view">
         <div class="image-header">
           <h3 class="title">
             <span>꽃과 함께 하는 일상, </span>
             <b>플라워클래스</b>
           </h3>
-          <a>더보기</a>
+          <a class="addWatch">더보기</a>
         </div>
+
         <div class="image-section">
+
           <div class="big-image-box" class="first-image-box">
             <a>
-              <img id="first-image" />
+              <img id="first-image" alt="매주 새로운 커리큘럼으로 배우는" />
               <div class="content-box">
                 <p>매주 새로운 커리큘럼을 배우는</p>
-                <p>플라워 클래스 자세히 보기></p>
+                <p>플라워 클래스 자세히 보기</p>
               </div>
             </a>
           </div>
-          <ul class="smll-image-box">
-            <li class="second-image-box">
-              <a>
+
+          <ul class="small-image-box">
+            <li class="item second-image-box">
+              <div class="category-product-detail over-store">
+                <dl class="detail">
+                  <dt class="thumnail">
+                    <a>
+                      <img id="second-image" />
+                    </a>
+                  </dt>
+                  <dd class="summary" id="second-header-info">
+                    <a>
+                      <p class="image-title"></p>
+                    </a>
+                    <p class="discount"></p>
+                  </dd>
+                </dl>
+              </div>
+              {{! <a>
                 <img id="second-image" />
                 <div class="header-info-box" id="second-header-info">
-                  <p>제목 ㅋㅋ</p>
-                  <p></p>
+                  <p class="image-title"></p>
+                  <p class="discount"></p>
                 </div>
-              </a>
+              </a> }}
             </li>
-            <li class="third-image-box">
-              <a>
+            <li class="item third-image-box">
+              <div class="category-product-detail over-store">
+                <dl class="detail">
+                  <dt class="thumnail">
+                    <a>
+                      <img id="third-image" />
+                    </a>
+                  </dt>
+                  <dd class="summary" id="third-header-info">
+                    <a>
+                      <p class="image-title"></p>
+                    </a>
+                    <p class="discount"></p>
+                  </dd>
+                </dl>
+              </div>
+              {{! <a>
                 <img id="third-image" />
                 <div class="header-info-box" id="third-header-info">
-                  <p>제목 ㅋㅋ</p>
-                  <p></p>
+                  <p class="image-title"></p>
+                  <p class="discount"></p>
                 </div>
-              </a>
+              </a> }}
             </li>
           </ul>
-          <div>
-            <button id="left-btn">왼쪽</button>
-            <button id="right-btn">오른쪽</button>
+
+          <div class="btnBox">
+            <button id="left-btn">
+            </button>
+            <button id="right-btn">
+            </button>
           </div>
         </div>
       </section>
+
       <section class="section banner-view">
-        <button class="test-button">클릭dldlksaldkaslkdlsakdlkl</button>
+        <div class="banner-header">
+          <div class="title">꾸까 브랜드 스토리</div>
+          <div class="more">더보기</div>
+        </div>
+        <div class="container">
+          <div class="show-view">
+            <article class="banner">
+              <a href="https://kukka.kr/brand/showroom/" class="link">
+                <div class="banner-image show_room"></div>
+                <div class="info show_room">
+                  <strong class="banner-name">꾸까 오프라인 쇼룸</strong>
+                  <p class="desc">
+                    꽃을 가까이서 만져보고 향기를 맡아보고,
+                    <br />
+                    꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸
+                    <p class="more">꾸까 쇼룸 안내</p>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="banner">
+              <a href="https://kukka.kr/brand/story/" class="link">
+                <div class="banner-image brand"></div>
+                <div class="info brand">
+                  <strong class="banner-name">꾸까 브랜드 이야기</strong>
+                  <p class="desc">
+                    꽃으로 라이프스타일을 만들어가는
+                    <br />
+                    kukka의 문화를 소개해요.
+                    <p class="more">Brand stroy</p>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="banner">
+              <a href="https://kukka.kr/brand/showroom/" class="link">
+                <div class="banner-image show_room"></div>
+                <div class="info show_room">
+                  <strong class="banner-name">꾸까 오프라인 쇼룸</strong>
+                  <p class="desc">
+                    꽃을 가까이서 만져보고 향기를 맡아보고,
+                    <br />
+                    꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸
+                    <p class="more">꾸까 쇼룸 안내</p>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="banner">
+              <a href="https://kukka.kr/brand/story/" class="link">
+                <div class="banner-image brand"></div>
+                <div class="info brand">
+                  <strong class="banner-name">꾸까 브랜드 이야기</strong>
+                  <p class="desc">
+                    꽃으로 라이프스타일을 만들어가는
+                    <br />
+                    kukka의 문화를 소개해요.
+                    <p class="more">Brand stroy</p>
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="controller-container">
+          <button class="controller prev">
+            <span class="dot prev active"></span>
+          </button>
+          <button class="controller next">
+            <span class="dot next"></span>
+          </button>
+        </div>
       </section>
       <section class="section">
         <footer class="footer">
-
           <div class="container">
             <div class="footer-wrap">
               <nav class="icon-box">

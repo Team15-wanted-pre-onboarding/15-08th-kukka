@@ -1,2 +1,32 @@
 .video-view {
+  max-width: 900px;
+  margin: 70px auto;
+  .summary {
+    max-width: 900px;
+    margin-bottom: 20px;
+    text-align: center;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 2;
+    }
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+      color: #696969;
+    }
+  }
+  .video {
+    .video-ratio {
+      position: relative;
+      padding-top: 40%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
