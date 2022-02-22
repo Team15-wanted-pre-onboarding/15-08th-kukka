@@ -44,12 +44,12 @@ const ImageView = () => {
   };
 
   const addInnerTitle = (index) => {
-    secondTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}${
+    secondTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}(${
       imageInfo[indexControl(index + 1)].day
-    }`;
-    thirdTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}${
+    })`;
+    thirdTitle.innerHTML = `${imageInfo[indexControl(index + 1)].title}(${
       imageInfo[indexControl(index + 1)].day
-    }`;
+    })`;
   };
 
   addImageSrc(imageInfoIndex);
