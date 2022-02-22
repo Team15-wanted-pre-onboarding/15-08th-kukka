@@ -45,14 +45,12 @@
       display: flex;
       display: -ms-flexbox;
       display: -webkit-box;
-      transform: translateX(0);
-      transition: transform ease-out;
 
-      // --currentSlide: 0;
-      // --duration: 0;
+      --currentSlide: 0;
+      --duration: 0;
 
-      // transition: transform calc(var(--duration) * 1ms) ease-out;
-      // transform: translate3D(calc(var(--currentSlide) * -50%), 0, 0);
+      transition: transform calc(var(--duration) * 1ms) ease-out;
+      transform: translate3D(calc(var(--currentSlide) * -100%), 0, 0);
 
       .banner {
         width: 50%;
