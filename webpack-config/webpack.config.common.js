@@ -88,6 +88,6 @@ module.exports = {
     new webpack.DefinePlugin({
       IS_PRODUCTION: isProduction,
     }),
-    new MiniCssExtractPlugin({ filename: 'style.css'}),
+    new MiniCssExtractPlugin({ filename: "style.css" }),
   ],
 };

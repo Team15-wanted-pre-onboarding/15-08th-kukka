@@ -4,15 +4,22 @@
     background: #ffca43 !important;
   }
 }
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
 
 .nav-view {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 57px;
+  height: 70px;
   background: #fff;
   text-align: center;
-  z-index: 99;
+  z-index: 10;
   &::after {
     content: "";
     position: absolute;
@@ -22,7 +29,15 @@
     height: 1px;
     background: #f4f4f4;
   }
+  .item_text {
+    padding-bottom: 10px;
+    &:hover {
+      border-bottom: 3px solid #ffca43;
+    }
+  }
+
   .item {
+    cursor: pointer;
     @media (min-width: 1024px) {
       & {
         margin-left: 50px;
