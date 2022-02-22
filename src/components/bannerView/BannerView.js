@@ -18,6 +18,7 @@ const BannerView = () => {
     })
 
     window.onload = () => {
+
         move(++currentSlide);
     }
     
